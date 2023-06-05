@@ -1,7 +1,7 @@
 baseURL = "https://hugodoit.pages.dev"
 defaultContentLanguage = "zh-cn"
 theme = "DoIt"
-title = "DoIt"
+title = "Think in Dawn"
 
 # 是否使用 robots.txt
 enableRobotsTXT = true
