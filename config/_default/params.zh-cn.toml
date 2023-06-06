@@ -9,7 +9,7 @@ keywords = ["blog", "IT"]
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "DoIt"
+  title = "Think in dawn"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false
@@ -28,7 +28,7 @@ keywords = ["blog", "IT"]
   enable = true
   # type of search engine ("algolia", "fuse")
   # 搜索引擎的类型 ("algolia", "fuse")
-  type = "algolia"
+  type = "fuse"
   # max index length of the chunked content
   # 文章内容最长索引长度
   contentLength = 4000
@@ -47,10 +47,6 @@ keywords = ["blog", "IT"]
   # whether to use the absolute URL based on the baseURL in search index
   # 是否在搜索索引中使用基于 baseURL 的绝对路径
   absoluteURL = false
-  [search.algolia]
-    index = "zh_cn_index"
-    appID = "5YGRNRQK1G"
-    searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
   [search.fuse]
     # https://fusejs.io/api/options.html
     isCaseSensitive = false

@@ -271,11 +271,11 @@ cacheRemoteImages = false
     Buffer = false
     Digg = false
     Evernote = false
-    Facebook = true
+    Facebook = false
     Flipboard = false
-    HackerNews = true
+    HackerNews = false
     Instapaper = false
-    Line = true
+    Line = false
     Linkedin = false
     Mix = false
     Myspace = false
@@ -286,7 +286,7 @@ cacheRemoteImages = false
     Renren = false
     Skype = false
     Stumbleupon = false
-    Telegram = true
+    Telegram = false
     Trello = false
     Tumblr = false
     Twitter = true
@@ -347,30 +347,6 @@ cacheRemoteImages = false
       # 可以在你的项目下相同路径存放你自己的数据文件:
       # "assets/data/emoji/"
       emoji = ""
-    # Waline comment config (https://waline.js.org)
-    # Waline 评论系统设置 (https://waline.js.org)
-    [page.comment.waline]
-      enable = false
-      serverURL = "https://waline-comment-doit.vercel.app/"
-      pageview = true
-      comment = true
-      # emoji = ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
-      # meta = ['nick', 'mail', 'link']
-      # requiredMeta = []
-      # login = 'enable'
-      # wordLimit = 0
-      # pageSize = 10
-      # imageUploader = false
-      # highlighter = false
-      # texRenderer = false
-    # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
-    # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
-    [page.comment.facebook]
-      enable = false
-      width = "100%"
-      numPosts = 10
-      appId = ""
-      languageCode = ""
     # Telegram comments config (https://comments.app/)
     # Telegram comments 评论系统设置 (https://comments.app/)
     [page.comment.telegram]
@@ -397,62 +373,6 @@ cacheRemoteImages = false
       label = ""
       lightTheme = "github-light"
       darkTheme = "github-dark"
-    # Twikoo comment config (https://twikoo.js.org/)
-    # Twikoo comment 评论系统设置 (https://twikoo.js.org/)
-    [page.comment.twikoo]
-      enable = false
-      envId = "https://twikoo-comments-doit.vercel.app/"
-      region = ""
-      path = ""
-      cloudbase = true # boolean : true / false. # 是否部署在腾讯云 CloudBase
-      visitor = true
-      commentCount = true
-    # Vssue comment config (https://vssue.js.org//)
-    # Vssue comment 评论系统设置 (https://vssue.js.org//)
-    [page.comment.vssue]
-      enable = false
-      platform = "" # ("bitbucket", "gitea", "gitee", "github", "gitlab")
-      owner = ""
-      repo = ""
-      clientId = ""
-      clientSecret = ""
-    # Remark42 comment config (https://remark42.com/)
-    # Remark42 comment 评论系统设置 (https://remark42.com/)
-    [page.comment.remark42]
-      enable = false
-      host = ""
-      site_id = ""
-      max_shown_comments = 15
-      show_email_subscription = true
-      simple_view = false
-    # giscus comment config (https://giscus.app/)
-    # giscus comment 评论系统设置 (https://giscus.app/)
-    [page.comment.giscus]
-      enable = false
-      # owner/repo
-      dataRepo = ""
-      dataRepoId = ""
-      dataCategory = ""
-      dataCategoryId = ""
-      dataMapping = "pathname"
-      dataStrict = "0"
-      dataReactionsEnabled = "1"
-      dataEmitMetadata = "0"
-      dataInputPosition = "bottom"
-      lightTheme = "light"
-      darkTheme = "dark"
-      dataLang = "en"
-    # artalk comment config (https://artalk.js.org/guide/frontend/config.html)
-    # artalk comment 评论系统设置 (https://artalk.js.org/guide/frontend/config.html)
-    [page.comment.artalk]
-      enable = false
-      server = ""
-      site = ""
-      lite = false
-      katex = false
-      lightbox = false
-      pageview = true
-      commentCount = true
   # Third-party library config
   # 第三方库配置
   [page.library]

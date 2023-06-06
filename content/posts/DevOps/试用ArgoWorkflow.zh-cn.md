@@ -39,5 +39,5 @@ kubectl -n argo port-forward deploy/argo-server --address 0.0.0.0 2746:2746
 ```
 
 ## 启动
-
+打开入口地址[https://localhost:1313](https://localhost:1313)
 {{< figure src="/images/argoworkflow-start.png" title="argoworkflow (figure)" >}}
