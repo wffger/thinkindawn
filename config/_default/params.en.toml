@@ -1,15 +1,15 @@
 # site description
 # 网站描述
-description = "wffger的平旦随想"
+description = "The official documentation for the Hugo DoIt theme"
 # site keywords
 # 网站关键词
-keywords = ["博客", "IT", "wffger"]
+keywords = ["Blog", "IT", "wffger"]
 # App icon config
 # 应用图标配置
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-  title = "平旦随想"
+  title = "Think in dawn"
   # whether to omit favicon resource links
   # 是否隐藏网站图标资源链接
   noFavicon = false
@@ -40,7 +40,7 @@ keywords = ["博客", "IT", "wffger"]
   maxResultLength = 10
   # snippet length of the result
   # 结果内容片段长度
-  snippetLength = 50
+  snippetLength = 300
   # HTML tag name of the highlight part in results
   # 搜索结果中高亮部分的 HTML 标签
   highlightTag = "em"
@@ -74,15 +74,12 @@ keywords = ["博客", "IT", "wffger"]
     # URL of avatar shown in home page
     # 主页显示头像的 URL
     avatarURL = "/images/avator.jpg"
-    # URL the avatar links to
-    # 头像的链接指向的 URL
-    avatarLinkURL = ""
     # title shown in home page (HTML format is supported)
     # 主页显示的网站标题 (支持 HTML 格式)
     title = ""
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "wffger的平旦随想"
+    subtitle = "A Clean, Elegant but Advanced Hugo Theme"
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = true
@@ -110,6 +107,6 @@ keywords = ["博客", "IT", "wffger"]
 # 赞助设置
 [sponsor]
   enable = false
-  bio = "如果你觉得这篇文章对你有所帮助，欢迎赞赏~"
+  bio = "If you find this post helpful, please consider sponsoring."
   link = "https://github.com/sponsors/HEIGE-PCloud"
   # custom = "<a href=\"https://www.buymeacoffee.com/PCloud\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
