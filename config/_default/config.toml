@@ -1,7 +1,7 @@
-baseURL = "https://hugodoit.pages.dev"
+baseURL = "https://thinkindawn.pages.dev"
 defaultContentLanguage = "zh-cn"
 theme = "DoIt"
-title = "Think in Dawn"
+title = "魏忽歌平旦随想"
 
 # 是否使用 robots.txt
 enableRobotsTXT = true
