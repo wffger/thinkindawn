@@ -365,7 +365,7 @@ cacheRemoteImages = false
       enable = true
       # owner/repo
       repo = "wffger/thinkindawn"
-      issueTerm = "pathname"
+      issueTerm = "og:title"
       label = "utterances"
       lightTheme = "github-light"
       darkTheme = "github-dark"
@@ -426,69 +426,69 @@ cacheRemoteImages = false
 
 # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
 # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
-[verification]
-  google = "MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"
-  bing = ""
-  yandex = ""
-  pinterest = ""
-  baidu = ""
-  so = ""
-  sogou = ""
+# [verification]
+#   google = "MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"
+#   bing = ""
+#   yandex = ""
+#   pinterest = ""
+#   baidu = ""
+#   so = ""
+#   sogou = ""
 
 # Site SEO config
 # 网站 SEO 配置
-[seo]
-  # image URL
-  # 图片 URL
-  image = "/images/Apple-Devices-Preview.png"
-  # thumbnail URL
-  # 缩略图 URL
-  thumbnailUrl = "/images/screenshot.png"
+# [seo]
+#   # image URL
+#   # 图片 URL
+#   image = "/images/Apple-Devices-Preview.png"
+#   # thumbnail URL
+#   # 缩略图 URL
+#   thumbnailUrl = "/images/screenshot.png"
 
 # Analytics config
 # 网站分析配置
-[analytics]
-  enable = false
-  # Google Analytics
-  [analytics.google]
-    id = ""
-    # whether to anonymize IP
-    # 是否匿名化用户 IP
-    anonymizeIP = true
-  # Fathom Analytics
-  [analytics.fathom]
-    id = ""
-    # server url for your tracker if you're self hosting
-    # 自行托管追踪器时的主机路径
-    server = ""
-  # Baidu Analytics
-  [analytics.baidu]
-    id = ""
-  # Umami Analytics
-  [analytics.umami]
-    data_website_id = ""
-    src = ""
-    data_host_url = ""
-    data_domains = ""
-  # Plausible Analytics
-  [analytics.plausible]
-    data_domain = ""
-    src = ""
-  # Cloudflare Analytics
-  [analytics.cloudflare]
-    token = ""
-  # Splitbee Analytics
-  [analytics.splitbee]
-    enable = false
-    # no cookie mode
-    # 无cookie模式
-    No_cookie = true
-    # respect the do not track setting of the browser
-    # 遵循浏览器的”要求网站不跟踪我“设定
-    Do_not_track = true
-    # token(optional), more info on https://splitbee.io/docs/embed-the-script
-    # token(可选)，详细信息请前往 https://splitbee.io/docs/embed-the-script 查看
-    data_token = ""
+# [analytics]
+#   enable = false
+#   # Google Analytics
+#   [analytics.google]
+#     id = ""
+#     # whether to anonymize IP
+#     # 是否匿名化用户 IP
+#     anonymizeIP = true
+#   # Fathom Analytics
+#   [analytics.fathom]
+#     id = ""
+#     # server url for your tracker if you're self hosting
+#     # 自行托管追踪器时的主机路径
+#     server = ""
+#   # Baidu Analytics
+#   [analytics.baidu]
+#     id = ""
+#   # Umami Analytics
+#   [analytics.umami]
+#     data_website_id = ""
+#     src = ""
+#     data_host_url = ""
+#     data_domains = ""
+#   # Plausible Analytics
+#   [analytics.plausible]
+#     data_domain = ""
+#     src = ""
+#   # Cloudflare Analytics
+#   [analytics.cloudflare]
+#     token = ""
+#   # Splitbee Analytics
+#   [analytics.splitbee]
+#     enable = false
+#     # no cookie mode
+#     # 无cookie模式
+#     No_cookie = true
+#     # respect the do not track setting of the browser
+#     # 遵循浏览器的”要求网站不跟踪我“设定
+#     Do_not_track = true
+#     # token(optional), more info on https://splitbee.io/docs/embed-the-script
+#     # token(可选)，详细信息请前往 https://splitbee.io/docs/embed-the-script 查看
+#     data_token = ""
 
 # Cookie consent config
 # Cookie 许可配置
