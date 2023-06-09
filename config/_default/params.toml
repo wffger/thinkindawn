@@ -209,7 +209,7 @@ cacheRemoteImages = false
     # whether to enable auto header numbering
     # 是否开启标题自动编号
     [page.header.number]
-      enable = true
+      enable = false
       [page.header.number.format]
         h2 = "{h2} {title}"
         h3 = "{h2}.{h3} {title}"
@@ -400,8 +400,8 @@ cacheRemoteImages = false
     # Publisher info
     # 出版者信息
     [page.seo.publisher]
-      name = "xxxx"
-      logoUrl = "/images/avatar.webp"
+      name = "wffger"
+      logoUrl = "/images/avatar.jpg"
   # Related content config
   # 相关文章推荐配置
   [page.related]
