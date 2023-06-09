@@ -1,6 +1,8 @@
 ---
 weight: 7
-title: "试用Argo Workflow"
+keywords: 
+- Try Out Argo Wrokflow
+title: "Try Out Argo Workflow"
 date: 2023-06-05
 lastmod: 2023-06-05
 draft: false
@@ -9,11 +11,10 @@ description: ""
 
 tags: ["Argo"]
 categories: ["DevOps"]
-
 lightgallery: true
 ---
 
-初次尝试本地部署Argo Workflow.
+Try to deploy Argo Workflow in local and run a simple workflow.
 
 <!--more-->
 
@@ -38,8 +39,8 @@ kubectl patch deployment \
 kubectl -n argo port-forward deploy/argo-server --address 0.0.0.0 2746:2746
 ```
 
-## 启动
-打开入口地址[https://localhost:2746](https://localhost:2746)
+## Start
+Open UI [https://localhost:2746](https://localhost:2746)
 {{< figure src="/images/argoworkflow-start.png" title="argoworkflow (figure)" >}}
 
 

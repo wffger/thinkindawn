@@ -1,5 +1,7 @@
 ---
 weight: 7
+keywords:
+- Ansible Playbook Optimization
 title: "8种途径提速Ansible剧本"
 date: 2023-06-09
 lastmod: 2023-06-09
@@ -9,7 +11,6 @@ description: ""
 
 tags: ["Ansible","翻译"]
 categories: ["DevOps"]
-
 lightgallery: true
 ---
 

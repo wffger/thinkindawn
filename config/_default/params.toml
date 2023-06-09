@@ -400,8 +400,8 @@ cacheRemoteImages = false
     # Publisher info
     # 出版者信息
     [page.seo.publisher]
-      name = "xxxx"
-      logoUrl = "/images/avatar.webp"
+      name = "wffger"
+      logoUrl = "/images/avatar.jpg"
   # Related content config
   # 相关文章推荐配置
   [page.related]

@@ -14,7 +14,7 @@
   # [UA-XXXXXXXX-X] google analytics code (replaced by params.analytics.google)
   googleAnalytics = ""
   # copyright description used only for seo schema
-  copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+  # copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 
 [zh-cn]
   weight = 2
@@ -29,4 +29,4 @@
   # [UA-XXXXXXXX-X] 谷歌分析代号 (被 params.analytics.google 替代)
   googleAnalytics = ""
   # 版权描述，仅仅用于 SEO
-  copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+  # copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
