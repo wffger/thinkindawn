@@ -73,7 +73,7 @@ keywords = ["博客", "IT", "wffger"]
     gravatarEmail = ""
     # URL of avatar shown in home page
     # 主页显示头像的 URL
-    avatarURL = "/images/avator.jpg"
+    avatarURL = "/images/avatar.jpg"
     # URL the avatar links to
     # 头像的链接指向的 URL
     avatarLinkURL = ""
