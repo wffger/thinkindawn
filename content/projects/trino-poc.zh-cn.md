@@ -7,7 +7,7 @@ draft: false
 authors: ["wffger"]
 
 tags: ["trino"]
-categories: ["projects"]
+categories: ["Projects"]
 lightgallery: true
 toc:
   auto: false

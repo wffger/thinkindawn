@@ -8,7 +8,7 @@ authors: ["wffger"]
 description: "Experience on marketing automation project."
 
 tags: ["AliCloud","CDP","k8s"]
-categories: ["projects"]
+categories: ["Projects"]
 lightgallery: true
 toc:
   auto: false
