@@ -20,7 +20,7 @@ lightgallery: true
 
 ## 1. 在单模块中使用多任务，避免模块环路
 人们通常都是线性思考的。例如，当你想安装多个软件包时，你可能在终端这样写代码：
-```
+```sh
 # Multiple `dnf` commands
 sudo dnf install httpd
 sudo dnf install firewalld
@@ -32,7 +32,7 @@ sudo dnf install git
 
 同样，你在Ansible剧本也可以使用相同的策略。你可以传递多个软件包给一个yum任务。  
 旧方法：
-```
+```yml
 - name: Install httpd
   ansible.builtin.yum:
     name: httpd
@@ -46,7 +46,7 @@ sudo dnf install git
     name: git
 ```
 新方法：
-```
+```yml
 - name: Install Pacakages
   ansible.builtin.yum:
     name: "{{ item }}"
@@ -57,7 +57,7 @@ sudo dnf install git
     - git
 ```
 更好的方法：
-```
+```yml
 - name: Install httpd and firewalld
   ansible.builtin.yum:
     name: 
@@ -69,7 +69,7 @@ sudo dnf install git
 
 ## 2.避免复制环路，使用同步模块
 当你复制多个文件到同一目录时，同步模块优于使用多个复制模块或者环路：
-```
+```yml
 - name: Copy application data
   synchronize:
     src: app_data/
@@ -113,7 +113,7 @@ server {
 
 template模块会用剧本中的值替换变量（代码中的{{  website_root_dir }}）。
 
-```
+```yml
 ---
 - name: Configure the nginx Web Server
   hosts: web_servers
@@ -132,7 +132,7 @@ template模块会用剧本中的值替换变量（代码中的{{  website_root_d
 你可以使用shell或者command模块去执行一些基础的Linux命令。但我强烈建议你使用另外合适的模块，万不得已才使用shell或command模块。因为后者只是简单地执行命令，而没有相应的检验，多数情况下你都需要注意幂等性和执行错误检查。
 
 例如，下面的第一个任务只是简单地覆盖了文件内容，并没有检查或者验证。但第二个任务仅在需要时改变文件，并且更新权限和属主信息。
-```
+```yml
     - name: Create file using shell module
       shell: 'echo "Hello" > /tmp/foo.conf'
       
