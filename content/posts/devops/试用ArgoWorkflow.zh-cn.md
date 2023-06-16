@@ -20,7 +20,7 @@ lightgallery: true
 <!--more-->
 
 ## 安装配置
-```sh
+```bash
 # 安装
 kubectl create namespace argo
 kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/latest/download/install.yaml

@@ -9,7 +9,7 @@ draft: false
 authors: ["wffger"]
 description: ""
 
-tags: ["SHELL","Linux"]
+tags: ["shell"]
 categories: ["Linux"]
 lightgallery: true
 ---
