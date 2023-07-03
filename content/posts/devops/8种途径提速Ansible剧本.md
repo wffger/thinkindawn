@@ -27,8 +27,7 @@ lightgallery: true
 你可以启用回调插件，例如timer, profile_task, 和profile_roles，得到任务耗时以确定哪个作业拖慢剧本。
 
 修改ansible.cfg以启用插件：  
-
-```
+```yml
 [defaults]
 inventory = ./hosts
 callbacks_enabled = timer, profile_tasks, profile_roles
@@ -47,14 +46,14 @@ Ansible按批次执行任务，由变量forks控制。
 
 修改ansible.cfg的并行数：
 
-```
+```yml
 [defaults]
 inventory = ./hosts
 forks=50
 ```
 你也可以使用--forks（-f）选项动态地修改并行数：
 
-```
+```sh
 ansible-playbook site.yaml --forks 50
 
 ```
@@ -98,7 +97,7 @@ pipelining = True
 Ansible默认会等到所有主机都完成一个任务时，再执行下一个任务，这是线性策略。
 如果任务之间，或者节点之间没有依赖关系。你可修改策略为free，这样Ansible会在一个主机上执行全部剧本任务，而不用等待别的主机完成任务。
 
-```
+```yml
 - hosts: production servers
   strategy: free
   tasks:
@@ -110,7 +109,7 @@ Ansible默认会等到所有主机都完成一个任务时，再执行下一个�
 如果任务执行耗时较长（例如磁盘备份，安装软件等），这会成为一个瓶颈，因为它增加了全局的执行时间。
 如果后续任务并不依赖当前的耗时任务，你可以使用async模式，搭配一个合适的poll间隔，告知Ansible无需等待，可以直接执行下一任务：
 
-```
+```yml
 ​​​​---
 - name: Async Demo
   hosts: nodes

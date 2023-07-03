@@ -20,7 +20,7 @@ lightgallery: true
 <!--more-->
 
 ## 安装配置
-```
+```bash
 # 安装
 kubectl create namespace argo
 kubectl apply -n argo -f https://github.com/argoproj/argo-workflows/releases/latest/download/install.yaml
@@ -47,7 +47,7 @@ kubectl -n argo port-forward deploy/argo-server --address 0.0.0.0 2746:2746
 ## 测试一下
 创建独立的命名空间`kubectl create namespace pony`  
 创建WorkflowTemplate  
-```
+```yml
 metadata:
   name: omniscient-bear
   namespace: pony

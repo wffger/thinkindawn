@@ -9,7 +9,7 @@ draft: false
 authors: ["wffger"]
 description: ""
 
-tags: ["SHELL","Linux"]
+tags: ["shell"]
 categories: ["Linux"]
 lightgallery: true
 ---
@@ -18,7 +18,7 @@ lightgallery: true
 # SHELL-命名管道模拟线程池
 
 ## 代码
-```
+```sh
 # ping-ip-by-pipe.sh
 thread=5
 tmp_fifo=/tmp/$$.fifo
@@ -63,7 +63,7 @@ exec {tmp_fd}>&-
 
 ### 关闭fd
 其实用下面的其中一个就可以关闭
-```
+```sh
 exec {tmp_fd}<&-
 exec {tmp_fd}>&-
 ```
