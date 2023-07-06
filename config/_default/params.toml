@@ -428,12 +428,12 @@ cacheRemoteImages = false
 # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
 [verification]
   google = "4KCRxQ-KKE_yrNUfGzEpPc-oRyKaBdXK6O4KeXxwTD4"
-#   bing = ""
+  bing = "DFB60FCA265A451B7061AC425C0F3717"
 #   yandex = ""
 #   pinterest = ""
-#   baidu = ""
+  baidu = "codeva-yXjZCC91xX"
 #   so = ""
-#   sogou = ""
+  sogou = "jveq3mD2s0"
 
 # Site SEO config
 # 网站 SEO 配置
