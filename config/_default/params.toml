@@ -426,8 +426,8 @@ cacheRemoteImages = false
 
 # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
 # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
-# [verification]
-#   google = "MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"
+[verification]
+  google = "4KCRxQ-KKE_yrNUfGzEpPc-oRyKaBdXK6O4KeXxwTD4"
 #   bing = ""
 #   yandex = ""
 #   pinterest = ""
