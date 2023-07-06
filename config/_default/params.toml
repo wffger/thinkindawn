@@ -429,11 +429,11 @@ cacheRemoteImages = false
 [verification]
   google = "4KCRxQ-KKE_yrNUfGzEpPc-oRyKaBdXK6O4KeXxwTD4"
   bing = "DFB60FCA265A451B7061AC425C0F3717"
+  baidu = "codeva-yXjZCC91xX"
+  sogou = "DyNxBEM6bq"
+#   so = ""
 #   yandex = ""
 #   pinterest = ""
-  baidu = "codeva-yXjZCC91xX"
-#   so = ""
-  sogou = "jveq3mD2s0"
 
 # Site SEO config
 # 网站 SEO 配置
