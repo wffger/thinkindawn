@@ -287,4 +287,4 @@ Linux 6.4.4-200.fc38.x86_64 (ydx) 	2023年07月30日 	_x86_64_	(8 CPU)
 
 
 ## 延伸
-<iframe src="//player.bilibili.com/player.html?aid=828931031&bvid=BV1Nu4y12759&cid=1211316586&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+[实例展示 linux性能分析](https://www.bilibili.com/video/BV1Nu4y12759/?share_source=copy_web&vd_source=ada3d407345872ae601d028968d910bd)
