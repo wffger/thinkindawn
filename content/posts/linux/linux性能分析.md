@@ -284,3 +284,7 @@ Linux 6.4.4-200.fc38.x86_64 (ydx) 	2023年07月30日 	_x86_64_	(8 CPU)
 ```
 ## [top](https://man7.org/linux/man-pages/man1/top.1.html)
 如果top的输出与前面的命令输出有很明显的不同，表明引起问题的负载一直在变化。我们需要用vmstat或者pidstat保存更具体的信息以便定位问题。
+
+
+## 延伸
+<iframe src="//player.bilibili.com/player.html?aid=828931031&bvid=BV1Nu4y12759&cid=1211316586&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
