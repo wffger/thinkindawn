@@ -88,11 +88,13 @@ helm package wffgerapp/
 ```
 ### 推送chart
 
+#### ChartMuseum
 ```bash
 cd charts
 helm cm-push wffgerapp/ chartmuseum
 helm repo update
 ```
+#### Python web server
 ```bash
 # 手动推送软件包
 cp wffgerapp-x.x.x.tgz /repo_py/web/charts
