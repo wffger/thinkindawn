@@ -26,7 +26,7 @@ lightgallery: true
 
 {{< image src="/images/aws-cognito.png" caption="app client setting" >}}
 
-## 修改T3工程代
+## 修改T3工程
 
 添加供应商 - /server/auth.ts
 ```
