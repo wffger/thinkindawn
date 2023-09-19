@@ -17,6 +17,8 @@ lightgallery: true
 <!--more-->
 # T3App使用AWS Cognito
 
+示例仓库：[t3-pretty](https://github.com/wffger/t3-pretty)
+
 ## AWS Cognito操作步骤
 
 1. 创建身份池，“联合身份提供商”，“SAML”
