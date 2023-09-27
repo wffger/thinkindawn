@@ -15,23 +15,23 @@ lightgallery: true
 ---
 
 <!--more-->
-# 步骤
-## 创建角色
+## 步骤
+### 创建角色
 创建角色Lambda-S3-Role，选择Lambda作为可信实体，授权AmazonS3FullAccess和AWSLambdaBasicExecutionRole。
-## 创建桶
+### 创建桶
 创建两个桶：img-wffger和img-wffger-resized。<br />第一个桶中创建文件夹images，用作Lambda S3触发器的前缀。<br />我们往images上传jpg文件，将会触发Lambda 函数执行python操作，创建新的图片并上传到第二个桶。<br />第二个桶的名称必须为第一个桶名称加上resized后缀。
-## 创建环境依赖层
+### 创建环境依赖层
 aws自带的layer没有提供Pillow模块，需要我们自己创建一个包含依赖的layer。
-### 本地创建zip包
+#### 本地创建zip包
 ```python
 py -m pip install Pillow -t python/
 zip -r pillow.zip python
 ```
-### Lambda创建层
+#### Lambda创建层
 [创建层](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/create/layer)，上传zip，命名为python311-pillow
-## 创建Lambda函数
+### 创建Lambda函数
 选择执行角色为Lambda-S3-Role<br />添加层，python311-pillow
-### 编辑代码
+#### 编辑代码
 修改代码后，记得点击Deploy。
 ```python
 import boto3
@@ -58,7 +58,7 @@ def lambda_handler(event, context):
         s3.upload_file(upload_path, '{}-resized'.format(bucket), key)
     
 ```
-### 编辑触发器
+#### 编辑触发器
 
 1. 添加事件类型为“All object create events”
 2. 编辑Prefix为“images”
@@ -68,7 +68,7 @@ def lambda_handler(event, context):
 
 <br />触发器创建完毕后，相关事件通知可以在img-wffger的属性页签下找到。
 
-### 使用虚拟事件测试
+#### 使用虚拟事件测试
 修改下面的JSON，共四处修改，其中key为真实存在的文件。<br />Records.awsRegion<br />Records.s3.bucket.name<br />Records.s3.bucket.arn<br />Records.s3.object.key
 ```json
 {
@@ -111,7 +111,7 @@ def lambda_handler(event, context):
 }
 ```
 
-## 查看结果
+### 查看结果
 第一个桶
 
 {{< image src="/images/bucket-source.png" caption="bucket source" >}}
@@ -123,7 +123,7 @@ def lambda_handler(event, context):
 
 ---
 
-# 错误说明
+## 错误说明
 > Unable to import module 'lambda_function': libjpeg.so.62
 > 出现这个报错说明layer有误
 
@@ -134,5 +134,5 @@ def lambda_handler(event, context):
 
 ---
 
-# 参考
+## 参考
 [https://repost.aws/knowledge-center/lambda-import-module-error-python](https://repost.aws/knowledge-center/lambda-import-module-error-python)<br />[https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/with-s3-example.html](https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/with-s3-example.html)
