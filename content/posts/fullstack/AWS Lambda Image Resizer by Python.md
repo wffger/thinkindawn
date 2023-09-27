@@ -64,7 +64,7 @@ def lambda_handler(event, context):
 2. 编辑Prefix为“images”
 3. 编辑Suffix为“.jpg"
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/759458/1695804786296-6ef75abe-a034-42a8-afb7-b4ecab804936.png#averageHue=%23529337&clientId=u71db8c93-e4ba-4&from=paste&height=679&id=u825ef9d8&originHeight=679&originWidth=257&originalType=binary&ratio=1&rotation=0&showTitle=false&size=43229&status=done&style=none&taskId=u8c5d1fa4-6ce8-4314-9063-034c0f6a235&title=&width=257)
+{{< image src="/images/ladmbda-s3-trigger.png" caption="s3 trigger" >}}
 
 <br />触发器创建完毕后，相关事件通知可以在img-wffger的属性页签下找到。
 
@@ -113,12 +113,12 @@ def lambda_handler(event, context):
 
 ## 查看结果
 第一个桶
-<br />
-{{< image data-src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806361744-34f80afb-7455-4a7e-9fff-8f388e469af0.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=uf693e3a2&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13739&status=done&style=none&taskId=uf458bff0-8473-41e0-bd4a-947612f26d6&title=&width=522" alt="source bucket" >}}
-<br />
+
+{{< image src="/images/bucket-source.png" caption="bucket source" >}}
+
 第二个桶
-<br />
-{{< image src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806382046-e5285b08-bb10-4a17-a683-d919f8c2e07f.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=u4c05fc59&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13323&status=done&style=none&taskId=u01b1caa0-25f2-406f-a31c-c498d2b3303&title=&width=522" caption="resized bucket" >}}
+
+{{< image src="/images/bucket-resized.png" caption="bucket resized" >}}
 
 
 ---
