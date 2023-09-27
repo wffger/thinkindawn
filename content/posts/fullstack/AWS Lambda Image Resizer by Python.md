@@ -15,7 +15,6 @@ lightgallery: true
 ---
 
 <!--more-->
-# AWS Lambda Image Resizer by Python
 # 步骤
 ## 创建角色
 创建角色Lambda-S3-Role，选择Lambda作为可信实体，授权AmazonS3FullAccess和AWSLambdaBasicExecutionRole。
@@ -111,7 +110,15 @@ def lambda_handler(event, context):
 ```
 
 ## 查看结果
-第一个桶<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/759458/1695806361744-34f80afb-7455-4a7e-9fff-8f388e469af0.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=uf693e3a2&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13739&status=done&style=none&taskId=uf458bff0-8473-41e0-bd4a-947612f26d6&title=&width=522)<br />第二个桶<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/759458/1695806382046-e5285b08-bb10-4a17-a683-d919f8c2e07f.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=u4c05fc59&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13323&status=done&style=none&taskId=u01b1caa0-25f2-406f-a31c-c498d2b3303&title=&width=522)
+第一个桶
+<br />
+{{< image src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806361744-34f80afb-7455-4a7e-9fff-8f388e469af0.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=uf693e3a2&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13739&status=done&style=none&taskId=uf458bff0-8473-41e0-bd4a-947612f26d6&title=&width=522" caption="source bucket" >}}
+
+<br />
+第二个桶
+<br />
+{{< image src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806382046-e5285b08-bb10-4a17-a683-d919f8c2e07f.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=u4c05fc59&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13323&status=done&style=none&taskId=u01b1caa0-25f2-406f-a31c-c498d2b3303&title=&width=522" caption="resized bucket" >}}
+
 
 ---
 
@@ -123,7 +130,6 @@ def lambda_handler(event, context):
 > Cannot have overlapping prefixes () or suffixes (.jpg) in two rules for the same event type.
 > 不能有重叠的规则。必须移除先前的规则。
 
-## 
 
 ---
 
