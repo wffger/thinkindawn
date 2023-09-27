@@ -114,8 +114,7 @@ def lambda_handler(event, context):
 ## 查看结果
 第一个桶
 <br />
-{{< image src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806361744-34f80afb-7455-4a7e-9fff-8f388e469af0.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=uf693e3a2&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13739&status=done&style=none&taskId=uf458bff0-8473-41e0-bd4a-947612f26d6&title=&width=522" caption="source bucket" >}}
-
+{{< image data-src="https://cdn.nlark.com/yuque/0/2023/png/759458/1695806361744-34f80afb-7455-4a7e-9fff-8f388e469af0.png#averageHue=%23fcfcfc&clientId=u41ea3fb6-8832-4&from=paste&height=115&id=uf693e3a2&originHeight=115&originWidth=522&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13739&status=done&style=none&taskId=uf458bff0-8473-41e0-bd4a-947612f26d6&title=&width=522" alt="source bucket" >}}
 <br />
 第二个桶
 <br />
