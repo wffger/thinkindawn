@@ -64,7 +64,7 @@ def lambda_handler(event, context):
 2. 编辑Prefix为“images”
 3. 编辑Suffix为“.jpg"
 
-{{< image src="/images/ladmbda-s3-trigger.png" caption="s3 trigger" >}}
+{{< image src="/images/lambda-s3-trigger.png" caption="s3 trigger" >}}
 
 <br />触发器创建完毕后，相关事件通知可以在img-wffger的属性页签下找到。
 
