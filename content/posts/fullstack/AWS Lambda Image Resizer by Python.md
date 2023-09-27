@@ -64,7 +64,9 @@ def lambda_handler(event, context):
 2. 编辑Prefix为“images”
 3. 编辑Suffix为“.jpg"
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/759458/1695804786296-6ef75abe-a034-42a8-afb7-b4ecab804936.png#averageHue=%23529337&clientId=u71db8c93-e4ba-4&from=paste&height=679&id=u825ef9d8&originHeight=679&originWidth=257&originalType=binary&ratio=1&rotation=0&showTitle=false&size=43229&status=done&style=none&taskId=u8c5d1fa4-6ce8-4314-9063-034c0f6a235&title=&width=257)<br />触发器创建完毕后，相关事件通知可以在img-wffger的属性页签下找到。
+{{ $image := resources.GetRemote "https://cdn.nlark.com/yuque/0/2023/png/759458/1695804786296-6ef75abe-a034-42a8-afb7-b4ecab804936.png#averageHue=%23529337&clientId=u71db8c93-e4ba-4&from=paste&height=679&id=u825ef9d8&originHeight=679&originWidth=257&originalType=binary&ratio=1&rotation=0&showTitle=false&size=43229&status=done&style=none&taskId=u8c5d1fa4-6ce8-4314-9063-034c0f6a235&title=&width=257" }}
+
+<br />触发器创建完毕后，相关事件通知可以在img-wffger的属性页签下找到。
 
 ### 使用虚拟事件测试
 修改下面的JSON，共四处修改，其中key为真实存在的文件。<br />Records.awsRegion<br />Records.s3.bucket.name<br />Records.s3.bucket.arn<br />Records.s3.object.key
