@@ -22,3 +22,8 @@ math:
 ## 性格
 
 > 喜欢安静，但可以为I作E。
+
+
+## 圈子
+> [开源中国](https://my.oschina.net/wffger)  
+> [破晓日报](https://daybreakpaper.wffger.fun/)  
